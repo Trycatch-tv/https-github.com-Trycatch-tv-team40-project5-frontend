@@ -17,14 +17,20 @@ function reservationForm() {
         
             <section className='sec-two'>
             <label className='sub-form'>
+                <div>
                 <h3>Fecha</h3>
-                <input type="date" className='place-info' />
+                <input type="date" className='place-info-date' />
+                </div>
                 <hr/>
+                <div>
                 <h3>Hora</h3>
-                <input type="time" className='place-info'/>
+                <input type="time" className='place-info-time'/>
+                </div>
                 <hr/>
+                <div>
                 <h3>Tamaño</h3>
-                <input type="text" name='persons' placeholder='2 personas' className='place-info'/>
+                <input type="text" name='persons' placeholder='2 personas' className='place-info-person'/>
+                </div>
             </label>
             </section>
             <hr/>

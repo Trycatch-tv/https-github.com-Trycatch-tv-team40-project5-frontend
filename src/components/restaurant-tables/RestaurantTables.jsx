@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Object from '../circleList/Object';
+import "./RestaurantTables.css";
 
 function ObjectList() {
 const [objects, setObjects] = useState([
