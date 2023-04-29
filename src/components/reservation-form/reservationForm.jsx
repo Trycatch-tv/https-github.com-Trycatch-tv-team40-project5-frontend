@@ -29,7 +29,7 @@ function reservationForm() {
                 <hr/>
                 <div>
                 <h3>Tamaño</h3>
-                <input type="text" name='persons' placeholder='2 personas' className='place-info-person'/>
+                <input type="number" name='persons' placeholder='2 personas' className='place-info-person'/>
                 </div>
             </label>
             </section>

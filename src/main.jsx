@@ -12,7 +12,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Navbar />
     <main>
       <section className='container-banner'>
-        <img className='banner-img' src={BannerCard} alt="bannerComida" />  
       </section>
 
       <section className='container-card'>
@@ -31,7 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <div className="circles">
         <div className="green-circle">
         </div>
-          <p className='text'>Sí se encuentra este color significa que esta <strong>LIBRE.</strong></p>
+          <p className='text'>Sí se encuentra este color significa que esta <strong> LIBRE.</strong></p>
       
         <div className="red-circle">
         </div>

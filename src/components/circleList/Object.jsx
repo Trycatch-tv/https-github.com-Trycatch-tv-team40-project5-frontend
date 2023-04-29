@@ -1,20 +1,14 @@
 import React, { useState } from 'react';
 import './Object.css';
 
-function Object() {
-    const [isFree, setIsFree] = useState(true);
-
-    const handleClick = () => {
-        setIsFree(!isFree);
-};
-
+function Object({id, dispo, handleClick}) {
 return (
     <section className='free-occupied'>
     <div
-        className={`Object ${isFree ? 'free' : 'occupied'}`}
-        onClick={handleClick}
+        className={`Object ${dispo ? 'free' : 'occupied'}`}
+        onClick={handleClick(id)}
     >
-        {isFree ? 'Libre' : 'Ocupado'}
+        {dispo ? 'Libre' : 'Ocupado'}
     </div>
     </section>
     );

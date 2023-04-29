@@ -2,35 +2,52 @@ import React, { useState } from 'react';
 import Object from '../circleList/Object';
 import "./RestaurantTables.css";
 
+const mesas = [
+    {
+      id: 1,
+      disponibilidad: true,
+    },
+    {
+      id: 2,
+      disponibilidad: false,
+    },
+    {
+      id: 3,
+      disponibilidad: true,
+    },
+    {
+      id: 4,
+      disponibilidad: false,
+    },
+  ];
+
 function ObjectList() {
-const [objects, setObjects] = useState([
-    { id: 1, isFree: true },
-    { id: 2, isFree: false },
-    { id: 3, isFree: true },
-]);
+const [tables, setTables] = useState(
+    mesas
+);
 
-const handleAddObject = () => {
-    const newObject = { id: objects.length + 1, isFree: true };
-    setObjects([...objects, newObject]);
-};
-
-const handleRemoveObject = (id) => {
-    const newObjects = objects.filter((object) => object.id !== id);
-    setObjects(newObjects);
+const handleClick = (key) => {
+    console.log(key);
+    /*tables.map((table) => {
+        if (table.id === key) {
+            table.disponibilidad =!table.disponibilidad;
+        }
+    })*/
 };
 
 return (
     <div className='container-circle'>
-        <button className='add-btn' onClick={handleAddObject}>Agregar objeto</button>
-        {objects.map((object) => (
-        <Object
-            key={object.id}
-            isFree={object.isFree}
-            onClick={() => handleRemoveObject(object.id)}
-        />
-        ))}
+        
+        
+        {tables.map(table => (
+            <Object
+                id={table.id}
+                key={table.id}
+                dispo={table.disponibilidad}
+                handleClick={handleClick}
+            />))}
     </div>
-    );
+)
 }
 
 export default ObjectList;
