@@ -1,6 +1,7 @@
 import React from "react";
 import RestaurantTables from "../restaurant-tables/RestaurantTables";
 import ReservationForm from "../reservation-form/ReservationForm";
+import "./reservation.css";
 
 function Reservation() {
   return (
