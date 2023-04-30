@@ -48,3 +48,85 @@
 .nav-btn--session:hover {
   transform: scale(1.02);
 }
+.title-access {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 2rem;
+}
+
+.container-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.inputs-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs-time input {
+  max-width: 120px;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
+  outline: none;
+}
+
+.inputs-user {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 0.4rem;
+}
+
+.inputs-user input {
+  border: none;
+  padding: 0.8rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.9rem;
+  outline: none;
+}
+.inputs-user-search input {
+  border: none;
+  padding: 0.8rem;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.9rem;
+  outline: none;
+}
+.container-form .inputs-time label input {
+  margin-top: 4px;
+}
+.container-form .inputs-user label input {
+  margin-top: 4px;
+}
+.container-form .inputs-time label {
+  font-weight: bold;
+}
+.container-form .inputs-user label {
+  font-weight: bold;
+}
+
+.btn-submit-edit {
+  background-color: #1bbe05;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.inputs-user-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 20px;
+}

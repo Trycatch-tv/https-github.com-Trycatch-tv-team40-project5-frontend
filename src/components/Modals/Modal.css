@@ -10,8 +10,8 @@
 
 .modal-container {
   background-color: white;
-  width: 60%;
-  min-height: 400px;
+  width: 70%;
+  min-height: 600px;
   border-radius: 1rem;
   position: relative;
   padding: 1.5rem;
@@ -27,4 +27,5 @@
   background-color: transparent;
   border-radius: 1rem;
   cursor: pointer;
+  border: 1px solid red;
 }
