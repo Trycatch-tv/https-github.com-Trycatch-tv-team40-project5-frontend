@@ -1,10 +1,11 @@
 import React from "react";
 import RestaurantTargets from "../restaurant-targets/RestaurantTargets";
 import SponsorBrands from "../sponsor-brands/SponsorBrands";
+import "./home.css";
 
 function Home() {
   return (
-    <>
+    <div className="home">
       <h2 className="subtitle">¡Los mas elegidos!</h2>
       <div className="targets">
         <RestaurantTargets />
@@ -21,7 +22,7 @@ function Home() {
         <SponsorBrands />
         <SponsorBrands />
       </div>
-    </>
+    </div>
   );
 }
 

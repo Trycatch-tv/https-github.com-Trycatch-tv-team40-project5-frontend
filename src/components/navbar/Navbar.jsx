@@ -110,9 +110,9 @@ function Navbar() {
 
   return (
     <nav className="nav">
-      <a href="#">
+      <Link className="nav-link" to="/">
         <img className="nav-img" src={Logo} alt="Logo" />
-      </a>
+      </Link>
       <input
         type="text"
         className="nav-input"
@@ -213,11 +213,9 @@ function Navbar() {
         </div>
       </Modal>
       <div className="nav-btns">
-        <button className="nav-btn--reserve">
-          <Link className="nav-link" to="/reservation">
-            Reserva Ya!
-          </Link>
-        </button>
+        <Link className="nav-link" to="/reservation">
+          <button className="nav-btn--reserve">Reserva Ya!</button>
+        </Link>
         <button className="nav-btn--session">Iniciar Sesion</button>
       </div>
     </nav>

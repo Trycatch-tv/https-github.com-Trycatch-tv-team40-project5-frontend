@@ -30,7 +30,7 @@ function ListTable({ deleteUser, editUser, reservations }) {
                   className="btn-edit"
                   onClick={() => editUser(reservation)}
                 >
-                  Editar
+                  <i class="fas fa-edit"></i>
                 </button>
                 <button
                   className="btn-delete"
@@ -38,8 +38,10 @@ function ListTable({ deleteUser, editUser, reservations }) {
                     deleteUser(reservation.id);
                   }}
                 >
-                  Eliminar
+                  <i class="fas fa-trash"></i>
                 </button>
+                {/* <button>Editar</button>
+                <button className="">Eliminar</button> */}
               </td>
             </tr>
           );
